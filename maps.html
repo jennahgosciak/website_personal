@@ -1,1 +1,85 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jennah Gosciak</title>
+
+  <!-- Custom Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,300,700' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Crimson+Text:400,600" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap CSS Style -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <!-- Template CSS Style -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- HTML for nav -->
+  <script type="text/javascript" src="jquery.js"></script>
+  <script>
+    $(function(){
+      $("#DivContent").load("navbar.html");
+      console.log("hello");
+    });
+  </script>
+</head>
+<body>
+    <div id="DivContent"></div>
+
+    <!-- Hero
+    ================================================== -->
+    <section>
+      <div id="maps-section" class="landing-hero">
+        <ul class="ul-maps">
+        <li class="li-maps" style="padding-top: 20px"><h2>Context Maps</h2>
+          <figure><img id="map-1" src="assets/images/map3.png">
+            <figcaption>Context map for the city of Bowie, MD.</figcaption>
+          </figure>
+        </li>
+        <li class="li-maps">
+          <figure>
+            <img id="map-2" src="assets/images/map1.png">
+            <figcaption>Context map for the Metropolitan Hospital Center in New York City.</figcaption>
+          </figure>
+        </li>
+        <li class="li-maps">
+          <figure>
+            <img id="map-3" src="assets/images/map2.png">
+            <figcaption>Context map of Free Union, Virginia.</figcaption>
+          </figure>
+        </li>
+        <li class="li-maps"><h2 >Ownership in Providence</h2>
+          <div class = "pvd-maps">
+            <div class = "pvd-img">
+              <img id="map-3a" src="assets/images/ownership1.png">
+            </div>
+            <div class = "pvd-img">
+              <img id="map-3b" src="assets/images/ownership4.png">
+            </div>
+            <div class = "pvd-img">
+              <img id="map-3c" src="assets/images/ownership2.png">
+            </div>
+            <div class = "pvd-img">
+              <img id="map-3d" src="assets/images/ownership3.png">
+            </div>
+          </div>
+        </li>
+        <li class="li-maps-2"><h2 class="li-maps" style = "padding-top: 0px">Mapping the Chicago Fire</h2>
+          <figure>
+            <img id="map-5" src="assets/images/chicago2.png">
+            <figcaption>Mapping the Chicago Fire by georeferencing historical drawings.</figcaption>
+          </figure>
+        </li>
+        <li class="li-maps-2" id="prisons"><h2 class="li-maps" id="prison-header">Prison Locations in England and Wales</h2>
+          <figure>
+            <img id="map-6" src="assets/images/prisons.png">
+          </figure>
+        </li>
+      </ul>
+    </div>
+    </section>
+  </body>
+  </html>

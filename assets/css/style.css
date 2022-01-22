@@ -436,8 +436,8 @@ p {
 .navbar-nav {
   position: fixed;
   left: 50%;
-  width: 628px;
-  margin-left: -314px;
+  width: 650px;
+  margin-left: -325px;
 }
 
 .navbar-default .navbar-nav > li > a {

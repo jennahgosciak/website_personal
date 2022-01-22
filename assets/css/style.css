@@ -395,8 +395,16 @@ p {
  margin: 7.5px 7.5px;
 }
 
+#top-title {
+  color: #262626;
+}
+
+#top-title:hover {
+  color: red;
+}
+
 .nav-title{
-  background: #fff;
+  background: black;
   width: 100%;
   height: 55px;
   border: none;
@@ -406,13 +414,13 @@ p {
 }
 
 .navbar-default {
-  background: #fff;
+  background: black;
   border: none;
   width: 100%;
   margin-bottom: 0;
   position: fixed;
   top: 50px;
-  border-bottom: 2px solid #f0f0f0;
+  border-bottom: 0.5px solid #fff;
 }
 
 .navbar.active {
@@ -427,7 +435,7 @@ p {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #060606;
+  color: #999999;
   text-transform: uppercase;
   -webkit-transition: color .3s ease-in-out;
   -moz-transition: color .3s ease-in-out;
@@ -439,11 +447,11 @@ p {
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav >
 .active > a:focus {
   background: transparent;
-  color: #fc6e51;
+  color: red;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #fc6e51;
+  color: red;
 }
 
 .dropdown-menu {
@@ -479,6 +487,19 @@ p {
 /***********************************************************************************************/
 /* =Hero section */
 /***********************************************************************************************/
+.contact-row {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+.col-sm-8 {
+  float: left;
+  position: relative;
+  left: -50%;
+  text-align: left;
+}
+
 .row {
   position: relative;
   top: 25px;
@@ -543,6 +564,31 @@ p {
 }
 
 /***********************************************************************************************/
+/* Contact section end */
+/***********************************************************************************************/
+.ev-img {
+  position: relative;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.contact-row {
+  position: relative;
+  top: 40px;
+  display: block;
+  float: left;
+  left: 50%;
+}
+
+.contact-row-2 {
+  text-align: left;
+  position: relative;
+  float: left;
+  left: -50%;
+}
+/***********************************************************************************************/
 /* =Hero about section-2 */
 /***********************************************************************************************/
 
@@ -591,9 +637,11 @@ p {
   display: inline;
   padding: 0px 15px 0px 0px;
   vertical-align: middle;
+  fill-opacity: 0.5;
 }
 
-.soc > li:hover svg path {
+.soc > li:hover a svg path {
+  fill-opacity: 1;
   fill: red;
 }
 

@@ -391,8 +391,12 @@ p {
 #header-text{
  position: fixed;
  top: 0;
- left: 25%;
- margin: 7.5px 7.5px;
+ left: 50%;
+ margin-top: 7.5px;
+ width: 445px;
+ margin-left: -222.5px;
+ text-align: center;
+ display: block;
 }
 
 #top-title {
@@ -430,8 +434,10 @@ p {
 }
 
 .navbar-nav {
-  position: absolute;
-  left: 25%;
+  position: fixed;
+  left: 50%;
+  width: 628px;
+  margin-left: -314px;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -588,6 +594,11 @@ p {
   float: left;
   left: -50%;
 }
+
+.contact-soc {
+  color: red;
+}
+
 /***********************************************************************************************/
 /* =Hero about section-2 */
 /***********************************************************************************************/
@@ -643,6 +654,64 @@ p {
 .soc > li:hover a svg path {
   fill-opacity: 1;
   fill: red;
+}
+
+/***********************************************************************************************/
+/* =Research section */
+/***********************************************************************************************/
+#research-section {
+  position: relative;
+  top: 30px;
+  background-size: cover;
+}
+
+.ul-research {
+  height: 100%;
+}
+
+.li-research {
+  position: relative;
+  top: 30px;
+  z-index: 15;
+  list-style-type: none;
+  padding-top: 20px;
+}
+
+#research-section > li > h2 {
+  position: relative;
+  color: black;
+  padding-left: 7.5px;
+  left: 7.5px;
+  z-index: 12;
+}
+
+.research-grid {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.research-img {
+  width: 450px;
+  height: auto;
+}
+
+.scribd_iframe_embed {
+  position: relative;
+  left: 50%;
+  margin-left: -400px;
+}
+
+#tia-poster {
+  position: relative;
+  width: 1000px;
+  height: auto;
+  left: 50%;
+  margin-left: -500px;
 }
 
 /***********************************************************************************************/

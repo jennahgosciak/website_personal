@@ -548,23 +548,51 @@ p {
 
 #about-section {
   position: relative;
-  display: block;
+  background-size: cover;
   width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 120px;
+}
+
+.grid-pos {
 }
 
 .about-text {
-  position: relative;
-  top: -50px;
-  left: 10px;
-  width: 75%;
-  color: black;
-  display: block;
-  z-index: 20;
+  width: 80%;
+  color: white;
+  text-align: left;
+}
+
+.about-text-cont {
+  padding: 20px 0px;
 }
 
 .about-image {
-  position: relative;
-  left: 25%;
+  padding: 0px 0px 0px 70px;
+  width: 550px;
+  height: auto;
+}
+
+#bio2 {
+  height: auto;
+}
+
+#current-proj {
+  color: black;
+}
+
+.soc {
+  padding: 20px 0px;
+}
+
+.soc > li {
+  display: inline;
+}
+
+.soc > li:hover svg path {
+  fill: red;
 }
 
 /***********************************************************************************************/
@@ -1853,6 +1881,11 @@ ul.details-list li:last-child {
 
 .landing-hero {
   background: white;
+  background-size: cover;
+}
+
+.landing-herov2 {
+  background: #7b7b7b;
   background-size: cover;
 }
 

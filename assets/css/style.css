@@ -589,6 +589,8 @@ p {
 
 .soc > li {
   display: inline;
+  padding: 0px 15px 0px 0px;
+  vertical-align: middle;
 }
 
 .soc > li:hover svg path {

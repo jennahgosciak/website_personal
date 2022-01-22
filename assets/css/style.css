@@ -767,8 +767,14 @@ p {
   padding-top: 20px;
 }
 
-#prison-header, #prisons {
-  top: -10;
+#prison-header {
+  position: relative;
+  top: 20px;
+}
+
+#prisons, #map-6 {
+  position: relative;
+  top: -10px;
 }
 
 .pvd-maps {

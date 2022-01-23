@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jennah Gosciak</title>
+
+  <!-- Custom Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,300,700' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Crimson+Text:400,600" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap CSS Style -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <!-- Template CSS Style -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- HTML for nav -->
+  <script type="text/javascript" src="jquery.js"></script>
+  <script>
+    $(function(){
+      $("#DivContent").load("navbar.html");
+      console.log("hello");
+    });
+  </script>
+</head>
+<body>
+    <div id="DivContent"></div>
+
+    <!-- Hero
+    ================================================== -->
+    <section>
+      <div id="design-section" class="landing-hero">
+        <ul class="ul-design">
+        <li class="li-design"><h2>Signs of Providence Journey Mapping</h2>
+          <img class="maps" style = "width: 100%" src="assets/images/design1.jpg">
+        </li>
+        <li class="li-design">
+          <div class="journey-mapping-container">
+            <div class="journey-mapping"><img class="maps" src="assets/images/design2.jpg"></div>
+            <div class="journey-mapping"><img class="maps" src="assets/images/design3.jpg"></div>
+            <div class="journey-mapping"><img class="maps" src="assets/images/design3.jpg"></div>
+            <div class="journey-mapping"><img class="maps" src="assets/images/design4.jpg"></div>
+          </div>
+        </li>
+        <li class="li-design-2"><h2>Niamey Cognitive Mapping Project</h2>
+          <img class="maps" src="assets/images/design5.jpg">
+        </li>
+        <li class="li-design-2"><h2>Makaranta Project</h2>
+          <img class="maps" src="assets/images/design7.jpg">
+          <div class="makaranta-container">
+            <div class="makaranta"><img class="maps" src="assets/images/design6.jpg"></div>
+            <div class="makaranta"><img class="maps" src="assets/images/design8.jpg"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <img class="modal-content" id="img01">
+      <span class="close">&times;</span>
+    </div>
+    </section>
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var images = document.getElementsByClassName('maps');
+    var modalImg = document.getElementById("img01");
+
+    // Go through all of the images with our custom class
+    for (var i = 0; i < images.length; i++) {
+      var img = images[i];
+      // and attach our click listener for this image.
+      img.onclick = function(evt) {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      }
+    }
+
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    </script>
+  </body>
+  </html>

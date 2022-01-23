@@ -566,7 +566,11 @@ p {
   text-align: center;
   position: relative;
   top: 10px;
-  left: 50%;
+  left: 45%;
+}
+
+.image-text:hover {
+  color: red;
 }
 
 /***********************************************************************************************/

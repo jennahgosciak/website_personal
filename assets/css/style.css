@@ -391,10 +391,10 @@ p {
 #header-text{
  position: fixed;
  top: 0;
- left: 50%;
+ left: 45%;
  margin-top: 7.5px;
- width: 445px;
- margin-left: -222.5px;
+ width: 50%;
+ margin-left: -19%;
  text-align: center;
  display: block;
 }
@@ -407,10 +407,10 @@ p {
   color: red;
 }
 
-.nav-title{
+.nav-title {
   background: black;
   width: 100%;
-  height: 55px;
+  height: 18%;
   border: none;
   position: fixed;
   top: 0;
@@ -421,16 +421,10 @@ p {
   background: black;
   border: none;
   width: 100%;
-  margin-bottom: 0;
+  margin: 0;
   position: fixed;
-  top: 50px;
+  top: 10%;
   border-bottom: 0.5px solid #fff;
-}
-
-.navbar.active {
-  position: fixed;
-  opacity: 0.95;
-  border: 1px solid #E8E8E8;
 }
 
 .navbar-nav {
@@ -443,11 +437,6 @@ p {
 .navbar-default .navbar-nav > li > a {
   color: #999999;
   text-transform: uppercase;
-  -webkit-transition: color .3s ease-in-out;
-  -moz-transition: color .3s ease-in-out;
-  -ms-transition: color .3s ease-in-out;
-  -o-transition: color .3s ease-in-out;
-  transition: color .3s ease-in-out;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav >
@@ -460,36 +449,94 @@ p {
   color: red;
 }
 
-.dropdown-menu {
-  top: 117%;
-  font-size: 12px;
-  text-transform: uppercase;
-    -webkit-box-shadow: none;
-  box-shadow: none;
-  border-radius: 2px;
-  border-top: 0;
-  padding: 12px 5px;
-}
-
-.dropdown-menu>li>a {
-  padding: 3px 15px;
-  line-height: 1.7;
-  letter-spacing: 2px;
-}
-
-.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-  background-color: #fff;
-  color: #fc6e51;
-}
-
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
   background-color: #fff;
   color: #fc6e51;
 }
 
-.navbar-default .dropdown:hover>.dropdown-menu {
-  display: block;
+@media screen and (max-width: 980px) {
+
+  #header-text, #top-title {
+    font-size: 70%;
+    left: 0%;
+    margin: 0;
+    text-align: left;
+    line-height: 10%;
+    padding: 0;
+    margin-left: 1%;
+  }
+
+  .nav-title {
+    height: 10%;
+  }
+
+  p, a {
+    font-size: 12px;
+  }
+
+  .nav > li > a {
+    font-size: 50%;
+  }
+
+  .nav {
+    position: fixed;
+    left: 0%;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    line-height: 10%;
+    width: auto;
+    top: 8%;
+  }
+
+  .container {
+    width: 50%;
+  }
 }
+
+@media screen and (max-width: 750px) {
+  #header-text, #top-title {
+    width: 100%;
+    font-size: 40%;
+    left: 1%;
+    margin: 0;
+    text-align: left;
+    line-height: 10%;
+    padding: 0;
+  }
+
+  body > header > nav, .navbar-default {
+    height: 30%;
+    width: 62px;
+    top: 10%;
+  }
+
+  .navbar-default{
+    background-color: rgb(0, 0, 0, 0.8);
+  }
+
+  .nav {
+    left: 2%;
+    top: 11%;
+  }
+
+  .nav > li {
+    padding: 0px;
+    width: 50%;
+    left: 0%;
+  }
+
+  .nav > li > a {
+    padding: 0;
+    color: white !important;
+    z-index: 1000;
+  }
+
+  .nav > li > a:hover {
+    color: red !important;
+  }
+}
+
 /***********************************************************************************************/
 /* =Hero section */
 /***********************************************************************************************/
@@ -551,8 +598,12 @@ p {
 
 .cell {
     width: auto;
-    height: 410px;
-    margin: 25px 0px;
+    height: 40%;
+    margin: 3% 0%;
+}
+
+.cell-2 {
+  height: 45%;
 }
 
 .img {
@@ -565,12 +616,45 @@ p {
   color: gray;
   text-align: center;
   position: relative;
-  top: 10px;
+  top: 0%;
   left: 45%;
 }
 
 .image-text:hover {
   color: red;
+}
+
+#video-1 {
+  float: left;
+  padding: 10% 0%;
+}
+
+@media screen and (max-width: 800px) {
+  .image-text {
+    font-size: 10px;
+  }
+
+  .cell {
+    height: 40%;
+  }
+
+  .cell-2 {
+    height: 45%;
+  }
+
+  #video-1 {
+    padding: 10% 0%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .image-text {
+    font-size: 8px;
+  }
+
+  #video-1 {
+    padding: 10% 0%;
+  }
 }
 
 /***********************************************************************************************/
@@ -650,15 +734,15 @@ p {
   align-items: flex-start;
   justify-content: center;
   gap: 120px;
-  top: 0px;
+  top: -10px;
 }
 
 .grid-pos{
     position: relative;
-    padding-top: 60px;
+    padding-top: 80px;
 }
 
-.about-text {
+.about-text, .about-text-3 {
   width: 80%;
   color: white;
   text-align: left;
@@ -669,8 +753,9 @@ p {
 }
 
 .about-image {
-  padding: 0px 0px 0px 70px;
-  width: 550px;
+  padding: 0 20% 0 20%;
+  margin-bottom: 10%;
+  width: 130%;
   height: auto;
 }
 
@@ -680,6 +765,7 @@ p {
 
 #current-proj {
   color: black;
+  top: 10%;
 }
 
 #current-proj:hover {
@@ -688,7 +774,7 @@ p {
 
 .soc {
   position: relative;
-  top: -50px;
+  top: 0;
   padding: 0px 0px;
 }
 
@@ -702,6 +788,53 @@ p {
 .soc > li:hover a svg path {
   fill-opacity: 1;
   fill: red;
+}
+
+@media screen and (max-width: 750px) {
+  .about-text > p {
+    font-size: 80%;
+  }
+
+  .about-text {
+    position: relative;
+    left: 12%;
+    padding: 0;
+    margin-top: -10%;
+  }
+
+  #about-section {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+
+  .about-image {
+      width: 100%;
+  }
+
+  .grid-pos {
+    padding-top: 5%;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  .about-text-cont{
+    top: 60px;
+  }
+
+  #current-proj {
+    position: relative;
+    left: 15%;
+    top: 70px;
+  }
+
+  .soc {
+    position: relative;
+    left: 12%;
+    top: 30px;
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
 }
 
 /***********************************************************************************************/
@@ -1178,214 +1311,15 @@ p.copyright {
 
 @media screen and (max-width: 1200px) {
 
-  #about-section .about {
-    padding-top: 40px;
-  }
-
 }
 
 @media screen and (max-width: 992px) {
-
-  body {
-    padding-top: 55px;
-  }
-
-  .navbar .container {
-    width: 95%!important;
-  }
-
-  .entry-post {
-    padding-bottom: 35px;
-  }
-
-  #type-masory {
-    width: auto;
-}
-
-  #about-section .about {
-    padding: 90px 70px;
-  }
-
-  .member-team .magnifier .magnifier-inner {
-    padding: 0 10px;
-  }
-
-  .member-team .magnifier .magnifier-inner p:last-of-type {
-    display: none;
-  }
-
-  ul.price-table {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .banner-image {
-    margin-top: 40px!important;
-  }
-
-  .gallery-masory {
-    width: auto;
-  }
-
-  .contactform {
-    padding: 80px 10px;
-  }
-
-  .portfolio-desc .col-sm-4 {
-    margin-bottom: 20px;
-  }
-
-  .portfolio-rel figure {
-    margin-bottom: 20px;
-  }
-
-  .form-inline .form-control, .form-inline .form-group {
-    display: block;
-  }
-
-  .newsletter-field {
-    width: 100%;
-  }
-
-  #subscribe-section #subscribe-button {
-    display: block;
-    width: 100%;
-  }
-
-  #blog-head {
-    text-align: center!important;
-  }
-
-  #search-form {
-    margin-top: 30px;
-  }
-
-  .breadcrumb {
-    text-align: center;
-  }
-
-}
-
-@media screen and (max-width: 768px) {
-
-  .navbar .container {
-    width: auto;
-  }
-
-  .big-title-sec .view-more a {
-    margin: 5px 0;
-  }
-
-  .hero-content h1 {
-    font-size: 38px;
-  }
-
-  .soon-countdown div span:first-child {
-    font-size: 60px;
-  }
-
-  .creative-content-left {
-    padding-top: 0;
-  }
-
-   #creative-section-1 .view-more {
-    text-align: center!important;
-   }
-
- #creative-section-2 .view-more {
-    margin-bottom: 80px;
-    text-align: center!important;
-  }
-
-  .about-studio, .what-do {
-    padding-bottom: 35px;
-  }
-
-  .member-team {
-    margin-bottom: 30px;
-  }
-
-  .member-team .magnifier .magnifier-inner {
-    padding: 0 30px;
- }
-
-  .member-team .magnifier .magnifier-inner p:last-of-type {
-    display: block;
-  }
-
-  .banner-content {
-    margin-top: 80px;
-    margin-bottom: 60px;
-    text-align: center;
-  }
-
-  .banner-image {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .client img {
-    width: 70%!important;
-  }
-
-  .about-me h4 a {
-    margin-bottom: 30px;
-  }
-
 }
 
 @media screen and (max-width: 640px) {
 
-  h1, .h1 {
-    font-size: 40px;
-  }
-
-    .hero-content h1 {
-    font-size: 33px;
-  }
-
-  .soon-countdown div span:first-child {
-    font-size: 50px;
-  }
-
-  p.hero {
-    font-size: 14px;
-    line-height: 24px;
-  }
-
-  .big-title-sec .big-title {
-    font-size: 20px;
-  }
-
-  .big-title-sec .big-subtitle {
-    font-size: 28px;
-  }
-
-  .big-title-sec p {
-    font-size: 14px;
-  }
-
-  #action-section {
-    text-align: center;
-  }
-
-  #action-section h2 {
-    line-height: 1.4;
-  }
-
-  #action-section .btn+.btn {
-    margin-left: 0;
-    margin-top: 20px;
-  }
-
-  .client img {
-    width: 100%!important;
-  }
 
 }
 
 @media screen and (max-width: 480px) {
-  .back-to-top {
-    visibility: hidden;
-  }
 }

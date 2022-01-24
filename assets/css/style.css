@@ -739,6 +739,23 @@ p {
   height: auto;
 }
 
+.research-grid-2 {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  width: 1000px;
+  left: 50%;
+  margin-left: -500px;
+}
+
+.research-grid-2 > *{
+  flex: 1 1 400px;
+}
+
 .scribd_iframe_embed {
   position: relative;
   left: 50%;

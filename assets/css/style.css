@@ -31,15 +31,19 @@ body {
   -webkit-font-smoothing: antialiased;
   padding-top: 68px;
   position: relative;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 html, section {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 #about-section-bg {
   background-color: black;
+  top: -10px;
 }
 
 a {
@@ -314,55 +318,53 @@ p {
 /************************************************************************
 // =Navbar
 *************************************************************************/
+.nav-title {
+  background: black;
+  width: 100%;
+  border: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 107px;
+}
+
 #header-text{
  position: fixed;
- top: 0;
- left: 45%;
- margin-top: 7.5px;
- width: 50%;
- margin-left: -19%;
+ height: 0px;
+ max-height: 80px;
+ left: 50%;
+ width: 450px;
+ margin-left: -235px;
+ padding-top: 15px;
+ padding-bottom: 5px;
  text-align: center;
  display: block;
 }
 
 #top-title {
   color: #262626;
+  z-index: 1000;
 }
 
-#top-title:hover {
+#top-title:hover, #top-title:focus  {
   color: red;
-}
-
-nav {
-  height: 5%;
-}
-
-.nav-title {
-  background: black;
-  width: 100%;
-  height: 15%;
-  border: none;
-  position: fixed;
-  top: 0;
-  left: 0;
+  z-index: 100000;
 }
 
 .navbar-default {
-  background: black;
-  border: none;
-  width: 100%;
-  margin: 0;
   position: fixed;
-  top: 10%;
-  border-bottom: 0.5px solid #fff;
+  top: 0;
 }
 
 .navbar-nav {
-  position: fixed;
+  position: relative;
   left: 50%;
-  width: 70%;
-  margin-left: -26%;
-  top: 9%;
+  width: 700px;
+  margin-top: 55px;
+  margin-left: -340px;
+  top: 0px;
+  box-sizing: border-box;
+  display: block;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -385,88 +387,6 @@ nav {
   color: #fc6e51;
 }
 
-@media screen and (max-width: 980px) {
-
-  #header-text, #top-title {
-    font-size: 70%;
-    left: 0%;
-    margin: 0;
-    text-align: left;
-    line-height: 10%;
-    padding: 0;
-    margin-left: 1%;
-  }
-
-  .nav-title {
-    height: 10%;
-  }
-
-  p, a {
-    font-size: 12px;
-  }
-
-  .nav > li > a {
-    font-size: 50%;
-  }
-
-  .nav {
-    position: fixed;
-    left: 0%;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-    line-height: 10%;
-    width: auto;
-    top: 8%;
-  }
-
-  .container {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  #header-text, #top-title {
-    width: 100%;
-    font-size: 40%;
-    left: 1%;
-    margin: 0;
-    text-align: left;
-    line-height: 10%;
-    padding: 0;
-  }
-
-  body > header > nav, .navbar-default {
-    height: 30%;
-    width: 62px;
-    top: 10%;
-  }
-
-  .navbar-default{
-    background-color: rgb(0, 0, 0, 0.8);
-  }
-
-  .nav {
-    left: 2%;
-    top: 11%;
-  }
-
-  .nav > li {
-    padding: 0px;
-    width: 50%;
-    left: 0%;
-  }
-
-  .nav > li > a {
-    padding: 0;
-    color: white !important;
-    z-index: 1000;
-  }
-
-  .nav > li > a:hover {
-    color: red !important;
-  }
-}
 
 /***********************************************************************************************/
 /* =Hero section */
@@ -507,8 +427,7 @@ nav {
 
 #hero-section {
   position: relative;
-  width: 100%;
-  top: 0%;
+  top: 0px;
 }
 
 .home-hero {
@@ -516,11 +435,11 @@ nav {
 }
 
 .bio {
-    padding: 0px 0px 16px 10px;
+    padding: 0px 0px 0px 0px;
     position: relative;
     content: '';
-    top: 9%;
-    left: 0;
+    top: 50px;
+    left: 10px;
     z-index: 1;
     color: "#ffffff";
 }
@@ -591,8 +510,7 @@ nav {
 /***********************************************************************************************/
 #contact-section {
   position: relative;
-  height: 100%;
-  top: 0%;
+  top: 60px;
 }
 
 .ev-img {
@@ -604,26 +522,25 @@ nav {
   z-index: 100;
 }
 
-.contact-title {
-  position: relative;
-  padding: 0px;
-  top: 18%;
-  width: 100%;
-  left: 50%;
-  margin-left: -18%;
-  z-index: 100;
-}
-
 .contact-container {
   position: relative;
-  top: 18%;
+  top: 40px;
+  left: 50%;
+  text-align: left;
+  margin-left: -95px;
 }
+
+.contact-row > h2 {
+  padding: 0px;
+  margin: 0px;
+}
+
 .contact-row {
   position: relative;
   padding: 0px;
-  width: 100%;
-  left: 41.75%;
+  left: 0px;
   z-index: 100;
+  text-align: left;
 }
 
 .contact-soc {
@@ -673,13 +590,13 @@ nav {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 120px;
-  top: 7%;
+  gap: 10%;
+  top: 0px;
 }
 
 .grid-pos{
     position: relative;
-    padding-top: 80px;
+    padding-top: 6%;
 }
 
 .about-text, .about-text-3 {
@@ -689,7 +606,7 @@ nav {
 }
 
 .about-text-cont {
-  padding: 20px 0px;
+  padding: 10% 0%;
 }
 
 .about-image {
@@ -782,17 +699,18 @@ nav {
 /***********************************************************************************************/
 #research-section {
   position: relative;
-  top: 3%;
+  top: 0%;
+  height: 100vh;
   background-size: cover;
 }
 
 .ul-research {
-  height: 100%;
+  position: relative;
+  top: 40px;
 }
 
 .li-research {
   position: relative;
-  top: 30px;
   z-index: 15;
   list-style-type: none;
   padding-top: 20px;
@@ -848,18 +766,22 @@ nav {
 /***********************************************************************************************/
 #maps-section {
   position: relative;
-  top: 0%;
+  top: 0px;
+  height: 100vh;
   background-size: cover;
 }
 
+.ul-maps {
+  position: relative;
+  top: 20px;
+}
 
 .li-maps {
   position: relative;
-  top: 30px;
   z-index: 10;
   list-style-type: none;
   padding-top: 40px;
-  width: 1000px !important;
+  max-width: 1000px;
   height: auto;
   margin-left: -500px;
   left: 50%;
@@ -930,23 +852,28 @@ nav {
 /***********************************************************************************************/
 #design-section {
   position: relative;
-  top: 0%;
+  top: 60px;
   background-size: cover;
+  height: 100vh;
 }
 
-h2 {
+.li-design > h2 {
   position: relative;
   left: 50%;
-  width: 1000px;
+  max-width: 1000px;
   margin-left: -500px;
+}
+
+.ul-design {
+  position: relative;
+  top: 0px;
 }
 
 .li-design {
   position: relative;
-  top: 30px;
   z-index: 10;
   list-style-type: none;
-  padding-top: 40px;
+  padding-top: 0px;
   width: 700px !important;
   height: auto;
   margin-left: -350px;
@@ -1003,7 +930,7 @@ h2 {
 /***********************************************************************************************/
 #video-section {
   position: relative;
-  top: 10%;
+  top: 50px;
   background-size: cover;
 }
 
@@ -1212,47 +1139,115 @@ p.copyright {
 /* =Back to top */
 /***********************************************************************************************/
 
-.back-to-top {
-  text-align: center;
-  background: #ed4d2b;
-  color: #fff;
-  display: none;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 12px;
-  position: fixed;
-  right: 25px;
-  bottom: 25px;
-  opacity: 0.7;
-  -webkit-transition: all .3s ease-in-out;
-     -moz-transition: all .3s ease-in-out;
-      -ms-transition: all .3s ease-in-out;
-       -o-transition: all .3s ease-in-out;
-          transition: all .3s ease-in-out;
-  cursor: pointer;
-  z-index: 9999
+@media screen and (max-width: 980px) {
+
+  #header-text, #top-title {
+    font-size: 22px;
+    left: 0px;
+    top: -5px;
+    margin: 0;
+    text-align: left;
+    line-height: 22px;
+    padding: 0;
+    margin-left: 4px;
+  }
+
+  .nav-title {
+    height: 70px;
+  }
+
+  p, a {
+    font-size: 12px;
+  }
+
+  .nav > li > a {
+    font-size: 8px;
+  }
+
+  .navbar-nav {
+    top: 26px;
+    left: -4px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ul-research {
+    top: 0px;
+  }
+
+  #maps-section {
+    top: 0px;
+  }
+
+  .ul-maps {
+    top: -20px;
+  }
+
+  #design-section {
+    top: 20px;
+  }
+
+  #about-section {
+    top: -10px;
+  }
+
+  #hero-section {
+    top: 0px;
+  }
+
+  .bio {
+    top: 10px;
+  }
+
+  #video-section {
+    top: 20px;
+  }
+
+  #contact-section {
+    top: 30px;
+  }
+
+  .contact-container {
+    margin-left: -100px;
+  }
 }
 
-.back-to-top:hover {
-  opacity: .9;
-}
+@media screen and (max-width: 750px) {
+  #header-text, #top-title {
+    width: 100%;
+    font-size: 16px;
+    left: 1%;
+    margin: 0;
+    text-align: left;
+    line-height: 10%;
+    padding: 0;
+  }
 
-/***********************************************************************************************/
-/* Responsive Part */
-/***********************************************************************************************/
+  .nav-title {
+    height: 50px;
+  }
 
-@media screen and (max-width: 1200px) {
+  .navbar-default {
+    height: 145px;
+    width: 78px;
+    top: 50px;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+  }
 
-}
+  .navbar-nav {
+    top: 50px;
+    margin-left: 10px;
+  }
 
-@media screen and (max-width: 992px) {
-}
+  .nav > li > a {
+    padding: 0;
+    color: white !important;
+    z-index: 1000;
+  }
 
-@media screen and (max-width: 640px) {
-
-
-}
-
-@media screen and (max-width: 480px) {
+  .nav > li > a:hover {
+    color: red !important;
+  }
 }

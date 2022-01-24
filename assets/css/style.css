@@ -515,9 +515,10 @@ p {
 
 .ev-img {
   position: relative;
-  width: 50%;
-  top: 15%;
   margin: auto;
+  width: 50%;
+  top: 20px;
+  text-align: center;
   display: block;
   z-index: 100;
 }

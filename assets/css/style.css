@@ -1,7 +1,5 @@
 /***********************************************************************************************
-	Salient by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+Jennah Gosciak - Personal Website/Portfolio
 
 **********************************************************************************************/
 
@@ -13,50 +11,10 @@
 
 
   01. Common Styles
-      -Typography
-      -Buttons
-      -Form
   02. Preloader
   03. Navbar
-  04. Hero section
-      -Hero section 2
-      -Hero section 3
-      -Hero section 4
-  05. Home hero
-  06. About Section
-  07. Choose Section
-  08. Projects Section
-  09. Clients section
-  10. Statistics Section
-  11. Call-to-action section
-  12. Services
-  13. Portfolio Page
-  14. Tweet section
-  15. Blog-section
-  16. Contact section
-  17. Google maps
-  18. Single-project
-  19. Landing page
-      -Features Section
-      -Video section
-      -Offer section
-      -Screenshots
-      -Subscribe section
-      -Testimonials section
-  20. Landing Blog
-      -Pagination
-      -Comments section
-      -Sidebar
-      -About widget
-      -Tags
-      -Recent Posts
-  21. App landing page
-  22. Coming soon page
-  23. Personal page
-  24. Footer
-  25. Back to top
-  26. Responsive Part
-
+  04. Sections for each page
+  05. Responsive Part
 --------------------------------------------------------------------------*/
 
 
@@ -64,7 +22,6 @@
 /***********************************************************************************************/
 /* =Common Styles */
 /***********************************************************************************************/
-
 body {
   font-family: 'Raleway', sans-serif;
   color: #737272;
@@ -74,6 +31,15 @@ body {
   -webkit-font-smoothing: antialiased;
   padding-top: 68px;
   position: relative;
+  height: 100vh;
+}
+
+html, section {
+  height: 100vh;
+}
+
+#about-section-bg {
+  background-color: black;
 }
 
 a {
@@ -186,10 +152,6 @@ p {
   line-height: 26px;
   font-weight: 400;
   letter-spacing: 1.5px;
-}
-
-.pad-sec {
-  padding: 100px 0!important;
 }
 
 .title-section {
@@ -322,42 +284,6 @@ p {
 }
 
 /***********************************************************************************************/
-/* =Form */
-/***********************************************************************************************/
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-control {
-  font-size: 12px;
-  color: #555;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #ccc;
-  border-radius: 1px;
-  height: auto;
-  padding: 9px 12px;
-    -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-  -moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-  -o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-  -ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-  transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-}
-
-.form-control:focus {
-  color: #111;
-  border-color: rgba(0,0,0, .7);
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  outline: none;
-}
-
-/***********************************************************************************************/
 /* =Preloader */
 /***********************************************************************************************/
 
@@ -407,10 +333,14 @@ p {
   color: red;
 }
 
+nav {
+  height: 5%;
+}
+
 .nav-title {
   background: black;
   width: 100%;
-  height: 18%;
+  height: 15%;
   border: none;
   position: fixed;
   top: 0;
@@ -432,6 +362,7 @@ p {
   left: 50%;
   width: 70%;
   margin-left: -26%;
+  top: 9%;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -555,7 +486,7 @@ p {
 
 .row {
   position: relative;
-  top: 25px;
+  top: 7vh;
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px 20px;
@@ -576,8 +507,8 @@ p {
 
 #hero-section {
   position: relative;
-  display: table;
   width: 100%;
+  top: 0%;
 }
 
 .home-hero {
@@ -588,10 +519,8 @@ p {
     padding: 0px 0px 16px 10px;
     position: relative;
     content: '';
-    top: 45px;
+    top: 9%;
     left: 0;
-    height: 100%;
-    width: 100%;
     z-index: 1;
     color: "#ffffff";
 }
@@ -660,29 +589,41 @@ p {
 /***********************************************************************************************/
 /* Contact section end */
 /***********************************************************************************************/
+#contact-section {
+  position: relative;
+  height: 100%;
+  top: 0%;
+}
+
 .ev-img {
   position: relative;
-  top: -20px;
-  width: 700px;
+  width: 50%;
+  top: 15%;
   margin: auto;
   display: block;
+  z-index: 100;
 }
 
 .contact-title {
   position: relative;
   padding: 0px;
-  top: 30px;
+  top: 18%;
   width: 100%;
   left: 50%;
   margin-left: -18%;
+  z-index: 100;
 }
 
+.contact-container {
+  position: relative;
+  top: 18%;
+}
 .contact-row {
   position: relative;
   padding: 0px;
-  top: 20px;
   width: 100%;
   left: 41.75%;
+  z-index: 100;
 }
 
 .contact-soc {
@@ -725,7 +666,6 @@ p {
 /***********************************************************************************************/
 /* =Hero about section-2 */
 /***********************************************************************************************/
-
 #about-section {
   position: relative;
   background-size: cover;
@@ -734,7 +674,7 @@ p {
   align-items: flex-start;
   justify-content: center;
   gap: 120px;
-  top: -10px;
+  top: 7%;
 }
 
 .grid-pos{
@@ -842,7 +782,7 @@ p {
 /***********************************************************************************************/
 #research-section {
   position: relative;
-  top: 30px;
+  top: 3%;
   background-size: cover;
 }
 
@@ -908,7 +848,7 @@ p {
 /***********************************************************************************************/
 #maps-section {
   position: relative;
-  top: 30px;
+  top: 0%;
   background-size: cover;
 }
 
@@ -990,7 +930,7 @@ p {
 /***********************************************************************************************/
 #design-section {
   position: relative;
-  top: 30px;
+  top: 0%;
   background-size: cover;
 }
 
@@ -1063,15 +1003,8 @@ h2 {
 /***********************************************************************************************/
 #video-section {
   position: relative;
-  top: 30px;
+  top: 10%;
   background-size: cover;
-}
-
-h2 {
-  position: relative;
-  left: 50%;
-  width: 1000px;
-  margin-left: -500px;
 }
 
 .video > p {

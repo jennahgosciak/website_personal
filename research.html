@@ -35,17 +35,18 @@
       <div id="research-section" class="landing-hero">
         <ul class="ul-research">
         <li class="li-research"><h2>Current Projects (2021)</h2>
-          <div>
+          <div class="research-img-nyu">
             <a href="https://jennahgosciak.medium.com/new-york-citys-biggest-landowner-69fac98794fe" target = "_blank">
-            <img id="nyu-pic" src="assets/images/nyu.PNG"></a></div></li>
+            <img id="nyu-pic" src="assets/images/nyu.PNG"></a></div>
+        </li>
         <li class="li-research"><div class="research-grid">
           <div class="research-img">
             <a href="https://jennahgosciak.medium.com/what-makes-a-floodplain-1e9e28cc8d6f" target = "_blank">
-            <img src="assets/images/proj1.jpg"></a>
+            <img class="research-img-1" src="assets/images/proj1.jpg"></a>
           </div>
           <div class="research-img">
             <a href="https://jennahgosciak.medium.com/contextual-changes-in-nyc-rezonings-5eb6f3a126c7" target = "_blank">
-              <img src="assets/images/proj2.jpg"></a>
+              <img class="research-img-1" src="assets/images/proj2.jpg"></a>
           </div>
         </div></li>
 
@@ -74,12 +75,54 @@
         </div></li>
 
         <li class="li-research"><h2 id="res-title-3">Applied Math</h2>
-          <iframe class="scribd_iframe_embed" title="drp proposal - 210103" src="https://www.scribd.com/embeds/489678529/content?start_page=1&view_mode=scroll&access_key=key-8JSFIZ32WVtrqnHqS54G" tabindex="0" data-auto-height="false" data-aspect-ratio="0.7729220222793488" scrolling="no" width="800" height="1066" frameborder="0"></iframe><p  style="   margin: 12px auto 6px auto;   font-family: Helvetica,Arial,Sans-serif;   font-style: normal;   font-variant: normal;   font-weight: normal;   font-size: 14px;   line-height: normal;   font-size-adjust: none;   font-stretch: normal;   -x-system-font: none;   display: block;"   ><a title="View drp proposal - 210103 on Scribd" href="https://www.scribd.com/document/489678529/drp-proposal-210103#from_embed"  style="text-decoration: underline;" target = "_blank">drp proposal - 210103</a></p></li>
-
+          <div class="research-img-nyu">
+          <iframe title="drp proposal - 210103" src="https://www.scribd.com/embeds/489678529/content?start_page=1&view_mode=scroll&access_key=key-8JSFIZ32WVtrqnHqS54G" tabindex="0" data-auto-height="false" data-aspect-ratio="0.7729220222793488" scrolling="no" width="100%" height="800px" frameborder="0"></iframe>
+          <a class="scribd-text" title="View drp proposal - 210103 on Scribd" href="https://www.scribd.com/document/489678529/drp-proposal-210103#from_embed"  style="text-decoration: underline;" target = "_blank">drp proposal - 210103</a>
+          </div>
+        </li>
           <li class="li-research"><h2 id="res-title-3">Urban Studies</h2>
-              <img id="tia-poster" src="assets/images/tia_poster.png"></li>
-          <li class="li-research"><iframe class="scribd_iframe_embed" title="dispwritingsample jan2021 fulltext" src="https://www.scribd.com/embeds/491184028/content?start_page=1&view_mode=scroll&access_key=key-IDVvhAPUE8WFXUCzrQol" tabindex="0" data-auto-height="false" data-aspect-ratio="0.7729220222793488" scrolling="no" width="800" height="1066" frameborder="0"></iframe><p  style="   margin: 12px auto 6px auto;   font-family: Helvetica,Arial,Sans-serif;   font-style: normal;   font-variant: normal;   font-weight: normal;   font-size: 14px;   line-height: normal;   font-size-adjust: none;   font-stretch: normal;   -x-system-font: none;   display: block;"   ><a title="View dispwritingsample jan2021 fulltext on Scribd" href="https://www.scribd.com/document/491184028/dispwritingsample-jan2021-fulltext#from_embed"  style="text-decoration: underline;" target = "_blank">dispwritingsample jan2021 f...</a></li>
+            <div class="research-img-nyu">
+              <img class="tia-poster" src="assets/images/tia_poster.png">
+            </div>
+          </li>
+          <li class="li-research">
+            <div class="research-img-nyu">
+              <iframe title="dispwritingsample jan2021 fulltext" src="https://www.scribd.com/embeds/491184028/content?start_page=1&view_mode=scroll&access_key=key-IDVvhAPUE8WFXUCzrQol" tabindex="0" data-auto-height="false" data-aspect-ratio="0.7729220222793488" scrolling="no" width="100%" height="800px" frameborder="0"></iframe>
+              <a class="scribd-text" title="View dispwritingsample jan2021 fulltext on Scribd" href="https://www.scribd.com/document/491184028/dispwritingsample-jan2021-fulltext#from_embed"  style="text-decoration: underline;" target = "_blank">dispwritingsample jan2021</a>
+            </div>
+          </li>
       </div>
-    </section>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <img class="modal-content" id="img01">
+        <span class="close">&times;</span>
+      </div>
+      </section>
+
+      <script>
+      // Get the modal
+      var modal = document.getElementById('myModal');
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var images = document.getElementsByClassName('tia-poster');
+      var modalImg = document.getElementById("img01");
+
+      // Go through all of the images with our custom class
+      for (var i = 0; i < images.length; i++) {
+        var img = images[i];
+        // and attach our click listener for this image.
+        img.onclick = function(evt) {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+        }
+      }
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      </script>
   </body>
   </html>

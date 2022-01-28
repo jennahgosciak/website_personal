@@ -728,15 +728,25 @@ p {
 .research-grid {
   position: relative;
   z-index: 10;
-  width: 100%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  gap: 40px;
 }
 
-.research-img {
-  width: 450px;
+.research-img-nyu {
+  width: 80%;
+  height: auto;
+  text-align: center;
+  margin: auto;
+}
+
+.research-img  {
+  width: 100%;
   height: auto;
 }
 
@@ -747,36 +757,37 @@ p {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 80px;
-  width: 1000px;
-  left: 50%;
-  margin-left: -500px;
+  gap: 40px;
+  width: 80%;
+  margin: auto;
 }
 
 .research-grid-2 > *{
-  flex: 1 1 400px;
+  flex: 1 1 300px;
+  border: 1px solid gray;
 }
 
 .scribd_iframe_embed {
   position: relative;
-  left: 50%;
-  margin-left: -400px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
 
-#tia-poster {
+.scribd-text {
   position: relative;
-  width: 1000px;
-  height: auto;
-  left: 50%;
-  margin-left: -500px;
+  left: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+  color: gray
 }
 
-#nyu-pic {
-  position: relative;
-  width: 1000px;
-  height: auto;
-  margin-left: -516px;
-  left: 50%;
+.scribd-text:hover {
+  color: red
+}
+
+.tia-poster {
+  border: 1px solid gray;
 }
 
 /***********************************************************************************************/

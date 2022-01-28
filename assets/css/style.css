@@ -750,15 +750,22 @@ p {
   height: auto;
 }
 
+.research-block-1 {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
 .research-grid-2 {
   position: relative;
   z-index: 10;
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
   align-items: center;
   justify-content: center;
   gap: 40px;
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
@@ -788,6 +795,7 @@ p {
 
 .tia-poster {
   border: 1px solid gray;
+  width: 100%;
 }
 
 /***********************************************************************************************/

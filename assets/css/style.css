@@ -799,6 +799,68 @@ p {
 }
 
 /***********************************************************************************************/
+/* =Floodplain article */
+/***********************************************************************************************/
+#floodplain-section {
+  position: relative;
+  top: 0%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.floodplain-title-div {
+  position: relative;
+  left: 10px;
+}
+.floodplain-title {
+  position: relative;
+  top: 50px;
+}
+
+.floodplain-img-div {
+  position: relative;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  top: 50px;
+}
+
+.floodplain-img-div2 {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  top: 70px;
+  left: 0;
+  background-color: black;
+}
+
+.floodplain-img {
+  width: 100%;
+  height: auto;
+}
+
+.main-text {
+  position: relative;
+  top: 90px;
+  margin: auto;
+  width: 80%;
+}
+
+.floodplain-li {
+  padding-top: 10px;
+}
+
+.article-link {
+  text-decoration: underline;
+  color: black;
+}
+
+.article-link:hover {
+  color: red;
+}
+
+/***********************************************************************************************/
 /* =Maps section */
 /***********************************************************************************************/
 #maps-section {
@@ -1025,8 +1087,7 @@ p {
 .modal-content {
   margin: auto;
   display: block;
-  width: 70%;
-  max-width: 900px;
+  width: 80%;
   overflow: auto;
 }
 
@@ -1059,7 +1120,7 @@ p {
 }
 
 /* The close Button */
-.close {
+.close, .close2 {
     position: absolute;
     top: 5px;
     right: 35px;
@@ -1069,8 +1130,14 @@ p {
     transition: 0.3s;
 }
 
+.close2 {
+  top: 20px;
+}
+
 .close:hover,
-.close:focus {
+.close2:hover,
+.close:focus,
+.close2:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;

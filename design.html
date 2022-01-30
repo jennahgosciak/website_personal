@@ -60,7 +60,6 @@
     <!-- The Modal -->
     <div id="myModal" class="modal">
       <img class="modal-content" id="img01">
-      <span class="close">&times;</span>
     </div>
     </section>
 
@@ -82,8 +81,7 @@
       }
     }
 
-    var span = document.getElementsByClassName("close")[0];
-    span.onclick = function() {
+    modal.onclick = function() {
       modal.style.display = "none";
     }
 

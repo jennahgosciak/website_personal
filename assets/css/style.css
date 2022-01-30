@@ -861,6 +861,55 @@ p {
 }
 
 /***********************************************************************************************/
+/* =NYU article */
+/***********************************************************************************************/
+#nyu-section {
+  position: relative;
+  top: 0%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.nyu-int-map-outer {
+  border: 1px solid gray;
+  width: 80%;
+  position: relative;
+  top: 40px;
+  left: 10px;
+  height: 80px;
+  min-width: 390px;
+}
+
+.nyu-int-map-inner {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  padding-right: 10px;
+}
+
+.nyu-int-map-inner > h2, .nyu-int-map-inner > a {
+  position: relative;
+  font-size: 15px;
+  padding: 0;
+  text-transform: none;
+}
+
+.nyu-int-sub {
+  color: gray;
+}
+
+.nyu-int-sub:hover {
+  color: red;
+}
+
+#nyu-mn {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+/***********************************************************************************************/
 /* =Maps section */
 /***********************************************************************************************/
 #maps-section {
@@ -1137,7 +1186,8 @@ color: red;
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
+  width: auto;
+  height: 100%;
   overflow: auto;
 }
 

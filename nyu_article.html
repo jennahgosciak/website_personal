@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jennah Gosciak</title>
+
+  <!-- Custom Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,300,700' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Crimson+Text:400,600" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap CSS Style -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <!-- Template CSS Style -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- HTML for nav -->
+  <script type="text/javascript" src="jquery.js"></script>
+  <script>
+    $(function(){
+      $("#DivContent").load("navbar.html");
+      console.log("hello");
+    });
+  </script>
+</head>
+<body>
+    <div id="DivContent"></div>
+
+    <div id="ac-wrapper">
+      <div id="popup">
+              <p id="popup-text">Note: this was originally published on
+                <a href="https://jennahgosciak.medium.com/what-makes-a-nyu-1e9e28cc8d6f" target="_blank">Medium</a>,
+                but as of February 2022 they've updated their layout and the images do not render full-size. I've re-created
+                the original layout of the article here.
+              </p>
+      </div>
+    </div>
+
+    <!-- Hero
+    ================================================== -->
+    <section>
+
+      <div id = "nyu-section">
+        <div class="floodplain-title-div">
+          <h1 class="floodplain-title">New York City's Biggest Landowner?</h1>
+          <h2 class="floodplain-title">New York University and New York City's Real Estate, 1997-2021</h2>
+        </div>
+
+        <div class="nyu-int-map-outer">
+          <a class="nyu-int-link" href="https://jennahgosciak.github.io/nyu_ownership/06_WebMap_Comb/index.html" target="_blank">
+            <div class="nyu-int-map-inner">
+              <h2>NYU’s Land Ownership — An interactive map</h2>
+              <div class="nyu-int-sub">
+                <p>jennahgosciak.github.io</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="main-text">
+          <div class="nyu-art-img-div" id="nyu-mn" >
+            <img class="nyu-art-img" src="assets/images/nyu-article/mn_map_nyu-01.png"
+            <label>Source: New York City Department of City Planning Primary Land Use Tax Output (PLUTO)</label>
+          </div>
+          <br>
+          <p>One of the largest private universities in New York City, New York University (NYU) has had a long and varied history — often intertwined with the history of the city itself.</p>
+          <br>
+          <p>A group of influential New Yorkers formed the university in 1831 under a different name, <a class="article-link" href="https://www.nyu.edu/faculty/governance-policies-and-procedures/faculty-handbook/the-university/history-and-traditions-of-new-york-university/a-brief-history-of-new-york-university.html" target="_blank">“University of the City of New-York.”</a> In 1835, the University Council
+            <a class="article-link" href="https://www.nyu.edu/faculty/governance-policies-and-procedures/faculty-handbook/the-university/history-and-traditions-of-new-york-university/a-brief-history-of-new-york-university.html" target="_blank">bought the northeast block of Washington Square East for $40,000</a>, and since then NYU has maintained its campus in lower Manhattan and the West Village. Over time, the university has weathered <a class="article-link" href="https://www.nyu.edu/faculty/governance-policies-and-procedures/faculty-handbook/the-university/history-and-traditions-of-new-york-university/a-brief-history-of-new-york-university.html" target="_blank">intense periods of expansion and growth, as well as periods of financial decline and low enrollment</a>.</p>
+
+        </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <img class="modal-content" id="img01">
+      </div>
+      </section>
+
+      <script>
+      // Get the modal
+      var modal = document.getElementById('myModal');
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var images = document.getElementsByClassName('nyu-art-img');
+      var modalImg = document.getElementById("img01");
+
+      // Go through all of the images with our custom class
+      for (var i = 0; i < images.length; i++) {
+        var img = images[i];
+        // and attach our click listener for this image.
+        img.onclick = function(evt) {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+        }
+      }
+
+      var span = document.getElementsByClassName("close")[0];
+      modal.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      $(document).ready(function(){
+       setTimeout(function(){
+          PopUp();
+        },50); // 5000 to load it after 5 seconds from page load
+      });
+
+      var ac = document.getElementById("ac-wrapper")
+      ac.onclick = function() {
+        ac.style.display = "none";
+      }
+
+      </script>
+  </body>
+  </html>

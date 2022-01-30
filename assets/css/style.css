@@ -874,10 +874,12 @@ p {
   border: 1px solid gray;
   width: 80%;
   position: relative;
-  top: 40px;
-  left: 10px;
+  top: 0px;
+  left: 0px;
   height: 80px;
   min-width: 390px;
+  text-align: center;
+  margin: auto;
 }
 
 .nyu-int-map-inner {
@@ -885,6 +887,7 @@ p {
   left: 10px;
   top: 10px;
   padding-right: 10px;
+  text-align: left;
 }
 
 .nyu-int-map-inner > h2, .nyu-int-map-inner > a {

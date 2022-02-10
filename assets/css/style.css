@@ -1271,7 +1271,7 @@ color: red;
   margin: auto;
   display: block;
   width: auto;
-  height: 100%;
+  max-height: 100%;
   overflow: auto;
 }
 

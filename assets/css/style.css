@@ -1273,6 +1273,12 @@ color: red;
   width: auto;
   max-height: 100%;
   overflow: auto;
+  vertical-align: middle;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* Add Animation */
@@ -1289,18 +1295,23 @@ color: red;
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(1)}
-    to {-webkit-transform:scale(2)}
+    from {-webkit-transform:scale(1) translateY(-50%)}
+    to {-webkit-transform:scale(2) translateY(-50%)}
 }
 
 @keyframes zoom {
-    from {transform:scale(0.4)}
-    to {transform:scale(1)}
+    from {transform:scale(0.4) translateY(-50%)}
+    to {transform:scale(1) translateY(-50%)}
+}
+
+@-webkit-keyframes zoom-out {
+    from {transform:scale(1) translateY(-50%)}
+    to {transform:scale(0.4) translateY(-50%)}
 }
 
 @keyframes zoom-out {
-    from {transform:scale(1)}
-    to {transform:scale(0)}
+    from {transform:scale(1) translateY(-50%)}
+    to {transform:scale(0) translateY(-50%)}
 }
 
 /* The close Button */
@@ -1327,12 +1338,6 @@ color: red;
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
 
 /***********************************************************************************************/
 /* =Landing page*/

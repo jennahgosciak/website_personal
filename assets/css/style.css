@@ -745,6 +745,18 @@ p {
   margin: auto;
 }
 
+.research-img-furman {
+  width: 80%;
+  height: auto;
+  text-align: center;
+  margin: auto;
+}
+
+#furman-pic {
+  width: 80%;
+  border: 1px solid gray;
+}
+
 .research-img  {
   width: 100%;
   height: auto;

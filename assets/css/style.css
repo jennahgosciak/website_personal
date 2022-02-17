@@ -1133,11 +1133,37 @@ p {
   padding-bottom: 20px;
   gap: 20px;
   flex-direction: row;
-  width: 700px;
+  width: 100%;
 }
 
 .journey-mapping-container > * {
   flex: 1 1 100px;
+}
+
+.illustrator-art-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  gap: 20px;
+  flex-direction: row;
+  width: 100%;
+}
+
+.illustrator-art-container > * {
+  flex: 1 1 200px;
+}
+
+.img-text {
+  position:relative;
+  left:0px;
+  visibility:hidden;
+}
+
+.illustrator-art:hover .img-text {
+  visibility: visible;
 }
 
 .makaranta-container {

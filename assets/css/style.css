@@ -582,6 +582,89 @@ p {
 }
 
 /***********************************************************************************************/
+/* =Hero landing section-2 */
+/***********************************************************************************************/
+#landing-section {
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10%;
+  top: 0px;
+}
+
+#landing-section-bg {
+  background-color: #212121;
+  top: 0px;
+  padding: 0px;
+}
+
+.self-portrait {
+  position: relative;
+  width: 65%;
+  height: 100%;
+}
+
+#self-portrait-img {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: auto;
+  right: 0%;
+  border-right: 2px solid #777777;
+  margin-left: auto;
+  object-fit: cover;
+}
+
+.landing-text-cont {
+  position: absolute;
+  top: 0;
+  left: 65%;
+  height: 100%;
+}
+
+.landing-text {
+  position: relative;
+  top: 0px;
+  left: 50px;
+  height: 70%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+  top: 15%;
+}
+
+.landing-text-li {
+  position: relative;
+  display: block;
+}
+
+.landing-text-li > a{
+  display: block;
+  position: relative;
+  color: #777777;
+}
+
+.landing-text-li > a:hover {
+  color: red
+}
+
+.arrow {
+  position: absolute;
+  border: solid #777777;
+  border-width: 0 3px 3px 0;
+  width: 100%;
+  display: block;
+  padding: 3px;
+  left: 0;
+}
+
+
+/***********************************************************************************************/
 /* =Hero about section-2 */
 /***********************************************************************************************/
 #about-section {

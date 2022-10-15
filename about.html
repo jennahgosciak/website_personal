@@ -22,13 +22,16 @@
   <script>
     $(function(){
       $("#DivContent").load("navbar.html");
-      console.log("hello");
     });
   </script>
 </head>
 <body>
-    <div id="DivContent"></div>
-
+  <!-- Preload the Whole Page -->
+  <div id="preloader">
+    <div id="loading-animation">&nbsp;</div>
+  </div>
+  
+  <div id="DivContent"></div>
     <!-- Hero
     ================================================== -->
     <section id="about-section-bg">
@@ -72,5 +75,9 @@
         </div>
       </div>
     </section>
+
+    <!-- JS libraries and scripts -->
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
   </html>

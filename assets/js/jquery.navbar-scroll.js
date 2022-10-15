@@ -96,7 +96,7 @@ $(document).ready(function($) {
 		var name = $("#header-text");
 		var nav = $(".navbar");
 
-		var top_spacing = 50px;
+		var top_spacing = "50px";
 		var waypoint_offset = 0;
 
 		nav_container.waypoint({

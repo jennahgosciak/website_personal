@@ -35,10 +35,14 @@ body {
   width: 100%;
 }
 
+html {
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
 html, section {
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
 }
 
 #about-section-bg {
@@ -408,7 +412,9 @@ p {
   top: 7vh;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px 20px;
+  width: 100%;
+  padding: 0 0 20px;
+  margin: auto;
 }
 
 /* Create two equal columns that sits next to each other */
@@ -419,7 +425,7 @@ p {
 }
 
 .column img {
-  margin-top: 8px;
+  margin-top: 0px;
   vertical-align: middle;
   z-index: 10;
 }
@@ -458,13 +464,16 @@ p {
   max-height: 100%;
 }
 
+.image-text-div {
+  text-align: center;
+  position: relative;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
 .image-text {
   font-size: 18px;
   color: gray;
-  text-align: center;
-  position: relative;
-  top: 0%;
-  left: 45%;
 }
 
 .image-text:hover {
@@ -473,7 +482,10 @@ p {
 
 #video-1 {
   float: left;
-  padding: 10% 0%;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-top: 0px;
 }
 
 @media screen and (max-width: 800px) {
@@ -490,7 +502,11 @@ p {
   }
 
   #video-1 {
-    padding: 10% 0%;
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-top: 0px;
   }
 }
 
@@ -904,7 +920,8 @@ p {
 
 .floodplain-title-div {
   position: relative;
-  left: 10px;
+  left: 0px;
+  margin-left: 10px;
 }
 .floodplain-title {
   position: relative;
@@ -981,6 +998,14 @@ p {
 
 #img01-zoning {
   background-color: white;
+}
+
+.zoning-link > p > a {
+  color: gray;
+}
+
+.zoning-link > p > a:hover{
+  color: red;
 }
 
 /***********************************************************************************************/
@@ -1669,6 +1694,7 @@ p.copyright {
   .navbar-nav {
     top: 50px;
     margin-left: 10px;
+    width: 100px;
   }
 
   .nav > li > a {

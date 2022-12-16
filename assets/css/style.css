@@ -1223,7 +1223,7 @@ p {
 }
 
 .flood-maps >* {
-  flex: 1 1 100px;
+  flex: 1 1 30%;
 }
 
 #int-map-link {
@@ -1295,6 +1295,13 @@ p {
   flex: 1 1 100px;
 }
 
+.art-container {
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+}
+
 .illustrator-art-container {
   position: relative;
   display: flex;
@@ -1304,11 +1311,10 @@ p {
   padding-bottom: 20px;
   gap: 20px;
   flex-direction: row;
-  width: 100%;
 }
 
 .illustrator-art-container > * {
-  flex: 1 1 200px;
+  flex: 1 1 30%;
 }
 
 .img-text {
@@ -1335,7 +1341,7 @@ p {
 
 .makaranta-container > * {
   padding-top: 40px;
-  flex: 1 1 130px;
+  flex: 1 1 30%;
 }
 
 /***********************************************************************************************/

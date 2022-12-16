@@ -1373,7 +1373,7 @@ p {
   justify-content: center;
   padding-bottom: 5px;
   padding-top: 20px;
-  gap: 40px;
+  gap: 5%;
   flex-direction: row;
   text-align: center;
   /*width: 1000px;*/

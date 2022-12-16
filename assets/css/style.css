@@ -1375,7 +1375,7 @@ p {
   padding-top: 20px;
   gap: 40px;
   flex-direction: row;
-  width: 1000px;
+  /*width: 1000px;*/
   margin: auto;
 }
 

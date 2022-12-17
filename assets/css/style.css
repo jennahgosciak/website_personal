@@ -394,12 +394,6 @@ p {
 /***********************************************************************************************/
 /* =Hero section */
 /***********************************************************************************************/
-.contact-row {
-  float: left;
-  position: relative;
-  left: 50%;
-}
-
 .col-sm-8 {
   float: left;
   position: relative;
@@ -526,6 +520,7 @@ p {
 #contact-section {
   position: relative;
   top: 60px;
+  height: 100%;
 }
 
 .ev-img {
@@ -541,22 +536,27 @@ p {
 .contact-container {
   position: relative;
   top: 40px;
-  left: 50%;
-  text-align: left;
-  margin-left: -95px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
-.contact-row > h2 {
-  padding: 0px;
-  margin: 0px;
+.contact-container-2 {
+  position: relative;
+  padding: auto;
+  margin: auto;
+  width: 50%;
+  height: 100%;
+  text-align: center;
 }
+
 
 .contact-row {
   position: relative;
-  padding: 0px;
-  left: 0px;
+  padding: auto;
   z-index: 100;
-  text-align: left;
+  text-align: center;
 }
 
 .contact-soc {
